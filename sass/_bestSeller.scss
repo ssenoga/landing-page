@@ -1,0 +1,39 @@
+.bestseller {
+  padding-top: $p-1;
+  padding-bottom: $p-1;
+  background-color: lightgray;
+  > div {
+    @include breakpoint-up(medium) {
+      display: flex;
+    }
+  }
+  h2 {
+    font-size: $font-md;
+    padding: $p;
+    margin-bottom: $p-1;
+    margin-left: $p-1;
+    text-align: center;
+  }
+
+  article {
+    padding-top: $p;
+    padding-bottom: $p;
+    @include breakpoint-up(medium) {
+      padding: $p-1;
+    }
+    &:not(:last-child) {
+      margin-bottom: $p-1;
+    }
+    header {
+      h3 {
+        text-align: center;
+        padding-top: $p;
+        padding-bottom: $p;
+      }
+    }
+    a {
+      color: green;
+      text-align: center;
+    }
+  }
+}

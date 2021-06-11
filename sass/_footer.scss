@@ -1,0 +1,30 @@
+.footer {
+  background-color: black;
+  color: white;
+  > div {
+    @include breakpoint-up(medium) {
+      display: flex;
+
+      .about-us {
+        flex: 2;
+      }
+      .follow-us {
+        flex: 1;
+      }
+    }
+
+    h3 {
+      padding-top: $p;
+      padding-bottom: $p;
+      font-size: $font-sm;
+    }
+
+    p {
+      line-height: 1.5;
+    }
+  }
+  p.text-center {
+    padding-top: $p-1;
+    padding-bottom: $p-1;
+  }
+}

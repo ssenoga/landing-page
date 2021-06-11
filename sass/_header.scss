@@ -1,0 +1,50 @@
+.navbar {
+  padding: $p;
+  max-height: 8vh;
+  width: 100%;
+
+  &__brand {
+    font-size: $font-md;
+  }
+  &__navmobile {
+    position: fixed;
+    top: 9vh;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    overflow: hidden;
+    background-color: #00000090;
+    ul {
+      background-color: rgb(252, 252, 252);
+      position: relative;
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 5px;
+      top: 5vh;
+      li {
+        padding: $p-1;
+      }
+    }
+  }
+  @include breakpoint-up(medium) {
+    &__navmobile {
+      display: none;
+    }
+  }
+  &__nav {
+    display: none;
+    @include breakpoint-up(medium) {
+      display: block; // hide this in mobile mode
+    }
+
+    ul {
+      li {
+        display: inline-block;
+        &:not(:first-child) {
+          padding-right: $p;
+          padding-left: $p;
+        }
+      }
+    }
+  }
+}

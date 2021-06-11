@@ -1,0 +1,30 @@
+.testimonies {
+  padding-top: $p-1;
+  padding-bottom: $p-1;
+
+  h2 {
+    padding: $p-1;
+    margin-left: $p-1;
+    font-size: $font-md;
+    margin-bottom: $p-1;
+    text-align: center;
+  }
+
+  &__wrapper {
+    max-height: 20vh;
+    overflow-y: hidden;
+    padding: $p-1;
+  }
+
+  article {
+    padding: $p-1;
+    .image-container {
+      width: 80px;
+      height: 80px;
+    }
+    .content {
+      padding-left: $p-1;
+      padding-right: $p-1;
+    }
+  }
+}

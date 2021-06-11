@@ -1,0 +1,24 @@
+.hours {
+  background-color: lightgray;
+
+  h2 {
+    padding: $p-1;
+    margin-left: $p-1;
+    font-size: $font-md;
+    margin-bottom: $p-1;
+    text-align: center;
+  }
+
+  ul {
+    li {
+      padding: $p-1;
+      &:nth-child(odd) {
+        background: white;
+      }
+
+      span {
+        float: right;
+      }
+    }
+  }
+}

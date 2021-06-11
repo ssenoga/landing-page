@@ -1,0 +1,28 @@
+.badges {
+  background-color: rgb(253, 251, 251);
+  padding-top: $p-2;
+  padding-bottom: $p-2;
+  > div {
+    @include breakpoint-up(medium) {
+      display: flex;
+    }
+  }
+
+  article {
+    padding-top: $p;
+    padding-bottom: $p;
+    @include breakpoint-up(medium) {
+      padding: $p-1;
+    }
+    &:not(:last-child) {
+      margin-bottom: $p-1;
+    }
+    header {
+      h3 {
+        text-align: center;
+        padding-top: $p;
+        padding-bottom: $p;
+      }
+    }
+  }
+}

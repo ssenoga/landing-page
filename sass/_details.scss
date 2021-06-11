@@ -1,0 +1,37 @@
+.details {
+  padding-top: $p-1;
+  padding-bottom: $p-1;
+
+  > div {
+    @include breakpoint-up(medium) {
+      display: flex;
+    }
+  }
+
+  .map {
+    flex: 1;
+  }
+
+  h2 {
+    padding: $p-1;
+    margin-left: $p-1;
+    font-size: $font-md;
+    margin-bottom: $p-1;
+    text-align: center;
+  }
+  .contact-content {
+    padding: $p-1;
+    border-radius: 5px;
+
+    h4 {
+      padding-top: $p;
+      padding-bottom: $p;
+      font-size: $font-sm;
+    }
+
+    p {
+      padding-top: $p;
+      padding-bottom: $p;
+    }
+  }
+}

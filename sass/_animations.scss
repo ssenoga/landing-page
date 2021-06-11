@@ -1,0 +1,46 @@
+.has-fade {
+  visibility: hidden;
+}
+
+@keyframes fade-in {
+  from {
+    transform: translateY(-200px);
+  }
+  1% {
+    transform: translateY(-200px);
+  }
+
+  to {
+    transform: translateY(0deg);
+  }
+}
+.fade-in {
+  animation: fade-in 200ms ease-in-out forwards;
+}
+
+@keyframes fade-out {
+  from {
+    transform: translateY(0deg);
+  }
+  25% {
+    transform: translateY(-50deg);
+  }
+  50% {
+    transform: translateY(-100deg);
+  }
+  75% {
+    transform: translateY(-150deg);
+  }
+  99% {
+    transform: translateY(-200px);
+  }
+  to {
+    transform: translateY(-200px);
+  }
+}
+.fade-out {
+  animation: fade-out 200ms ease-in-out;
+}
+.fade-in {
+  animation: fade-in 200ms ease-in-out;
+}
